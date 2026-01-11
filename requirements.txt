@@ -1,0 +1,13 @@
+Python 
+
+PyTorch
+
+NumPy
+
+Librosa
+
+scikit-learn
+
+Matplotlib
+
+pandas
