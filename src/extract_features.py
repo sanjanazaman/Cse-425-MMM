@@ -1,4 +1,4 @@
-# src/extract_features.py
+
 import os
 import numpy as np
 import librosa
@@ -50,7 +50,7 @@ def load_dataset(folder, label, language_id):
         print(f"Folder not found: {folder}")
         return X, y, lang
 
-    print(f"🔄 Extracting features from {folder} ...")
+    print(f"Extracting features from {folder} ...")
     for root, _, files in os.walk(folder):
         for file in tqdm(files, desc=os.path.basename(folder)):
             if file.lower().endswith(".wav"):
@@ -87,7 +87,7 @@ def main():
 
     
     np.savez(OUTPUT_PATH, X=X, y=y, language=lang)
-    print(f"💾 Features saved to {OUTPUT_PATH}")
+    print(f"Features saved to {OUTPUT_PATH}")
 
 
 if __name__ == "__main__":
